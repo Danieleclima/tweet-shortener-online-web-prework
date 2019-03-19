@@ -15,11 +15,10 @@ def dictionary
 end
 
 def word_substituter (tweet)
-  tweet.split.each do |word|
-    dictionary.each do |key, value|
+  tweet.split.map do |word|
+    dictionary.map do |key, value|
       if key == word
         word = value
-  binding.pry
       end
     end
   end
