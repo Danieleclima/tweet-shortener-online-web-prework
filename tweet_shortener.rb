@@ -15,7 +15,10 @@ end
 
 def word_substituter (tweet)
   tweet.split.each do |word|
-    
+    convert.each do |key, value|
+      if key == word
+        word = value
+      end
+    end
+  end
   
-  
-end
