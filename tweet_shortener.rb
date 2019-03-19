@@ -14,13 +14,5 @@ def dictionary
 end
 
 def word_substituter (tweet)
-  tweet.split(",")
-  dictionary.each do |key, value|
-    if tweet.include?(key)
-      tweet.each do |word|
-        word == value
-    end
-  end
-end
-tweet.join(" ")
+  
 end
